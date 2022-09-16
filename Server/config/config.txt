@@ -1,0 +1,41 @@
+
+ 
+# Dati di connessione
+RMIport=9988
+TCPport=9989
+RMICbPort=9987
+MulticastPort=9986
+MulticastAddress=225.5.10.28
+serverAddr=localhost
+
+
+# Nomi del file JSON contenente i dati degli utenti e dei post
+usersFile=./database/users.json
+postsFile=./database/posts.json
+logFile=./log/log.txt
+
+# Nome del servizio RMI offerto dal server
+RMIserviceName=RMICommandList
+callbackServiceName=followerUpdService
+
+# Intervallo del Rewarder e del Backuper
+RewarderSleepTime=1000000
+BackuperSleepTime=5000000
+
+
+# Ripartizione del guadagno ottenuto per ogni post
+# Se la somma non equivale a 1 saranno assegnati di default (UsersShare=0.3, AuthorShare=0.7)
+UsersShare=0.3
+AuthorShare=0.7
+
+# Range di fluttuazione del tasso di cambio da Wincoin a BTC 
+# Valori da 0 a 1
+WcoinBtcFluctRange=0.2
+
+BackupBeforeClosing=true
+DebugMode=false
+ColoredConsole=true
+PrintCom=true
+ClsAtStart=true
+
+bufSize=32768

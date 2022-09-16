@@ -1,0 +1,18 @@
+# File con i dati di configurazione del client
+
+# Porta del server RMI, TCP e RMI-callback e indirizzo del server
+RMIport=9988
+TCPport=9989
+RMICbPort=9987
+serverAddr=localhost
+
+# Nome dei servizi offerti dal server 
+RMIserviceName=RMICommandList
+callbackServiceName=followerUpdService
+
+# Tempo di attesa e numero di tentativi per ritentare la connessione con il server
+ServerWaitingTime=2000
+ServerWaitingAttempts=10
+
+# Cancella la console all'avvio del client
+ClsAtStart=true
